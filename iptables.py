@@ -14,6 +14,7 @@ print(Fore.GREEN, logo, Fore.RESET)
 
 print("your ip address")
 os.system("hostname -I")
+print(" ")
 
 tunnel_ip = input("Enter tunnel IP : ")
 panel_ip = input("Enter Panel IP : ")
