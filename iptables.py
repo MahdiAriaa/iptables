@@ -1,3 +1,7 @@
+# utf-8
+# create by : Mahdi Aria
+# script Language => Python
+
 import os
 
 os.system("pip3 install os")
