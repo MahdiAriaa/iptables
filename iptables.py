@@ -3,6 +3,12 @@ from colorama import Fore
 import pyfiglet
 from time import sleep
 
+os.system("pip3 install os")
+os.system("pip3 install colorama")
+os.system("pip3 install pyfiglet")
+os.system("pip3 install time")
+
+
 logo = pyfiglet.figlet_format("IP Tables", font="standard")
 print(Fore.GREEN, logo, Fore.RESET)
 
