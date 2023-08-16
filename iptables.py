@@ -76,15 +76,14 @@ def update_cloudflare():
             print(f"No DNS record found for {subdomain}.")
 
 
-while True:
-    update = input("Do you want to update the IP of the subdomain in Cloudflare? (yes/no)").lower()
-    if update == "yes" or update == "y":
-        print(Fore.YELLOW + "Please wait a moment..." + Fore.RESET)
-        sleep(5)
-        update_cloudflare()
-    elif "no":
-        print("Goodbye!!!")
-        break
+update = input("Do you want to update the IP of the subdomain in Cloudflare? (yes/no)").lower()
+if update == "yes" or update == "y":
+    print(Fore.YELLOW + "Please wait a moment..." + Fore.RESET)
+    sleep(5)
+    update_cloudflare()
+elif "no":
+    print("Goodbye!!!")
+    break
     else:
         print("Invlid option")
         continue
