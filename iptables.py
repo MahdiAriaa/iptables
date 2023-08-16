@@ -36,7 +36,6 @@ print(Fore.YELLOW + " iptables STATUS " + Fore.RESET)
 sleep(3)
 os.system("iptables -L -n -t nat")
 
-
 def update_cloudflare():
     API_KEY = "DZVImvsEMDdx1IPcN48F0OGq3-c3TpbzpANdWH0g"
     EMAIL = "mahdiaria138@gmail.com"
@@ -76,6 +75,7 @@ def update_cloudflare():
             print(f"No DNS record found for {subdomain}.")
 
 
+
 update = input("Do you want to update the IP of the subdomain in Cloudflare? (yes/no)").lower()
 if update == "yes" or update == "y":
     print(Fore.YELLOW + "Please wait a moment..." + Fore.RESET)
@@ -83,4 +83,3 @@ if update == "yes" or update == "y":
     update_cloudflare()
 elif "no":
     print("Goodbye!!!")
-
