@@ -83,8 +83,4 @@ if update == "yes" or update == "y":
     update_cloudflare()
 elif "no":
     print("Goodbye!!!")
-    break
-    else:
-        print("Invlid option")
-        continue
 
