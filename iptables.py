@@ -12,8 +12,11 @@ print("your ip address")
 os.system("hostname -I")
 print(" ")
 
-tunnel_ip = input("Enter tunnel IP : ")
-panel_ip = input("Enter Panel IP : ")
+#tunnel_ip = input("Enter tunnel IP : ")
+#panel_ip = input("Enter Panel IP : ")
+
+tunnel_ip = sys.argv[1]
+panel_ip = sys.argv[2]
 
 os.system("sysctl net.ipv4.ip_forward=1")
 os.system(f"iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination {tunnel_ip}")
