@@ -3,7 +3,7 @@
 # script Language => Python
 
 import os
-
+import sys
 
 os.system("clear")
 
